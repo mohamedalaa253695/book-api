@@ -1,0 +1,44 @@
+--books
+--Authors
+--reviews
+--users
+--catagories
+
+
+#######################
+
+Task list --->
+1- create a databse migrations 
+ - create the relations 
+2-migrate the tables
+3-seed the database tables 
+4- create your routes 
+5- create basic views [may be pull bootstrap]
+6- start view some row data in the views
+
+
+#########################################
+
+
+
+book-->hasmany-->authors
+book-->hasmany-->reviews
+book-->hasmany-->catagories
+
+author->hasmany-->books
+
+
+review-->belongsTo-->user
+review-->belongsTo-->book
+
+user-->hasmany-->reviews
+
+catagory-->hasmany-->books
+
+
+#########################################
+
+quick note you should notice the inverse relation 
+
+oneToMany-->belongsTo
+oneToone-->belongsTo
